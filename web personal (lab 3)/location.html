@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" /> 
+<link rel="stylesheet" href="main.css">
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+<script>
+function initialize() {
+  var mapProp = {
+    center:new google.maps.LatLng(51.508742,-0.120850),
+    zoom:5,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+<title>Location</title>
+
+
+</head>
+
+<body style="margin: 0px; padding: 0px; font-family: 'Trebuchet MS',verdana;">
+
+<table width="100%" style="height: 100%;" cellpadding="10" cellspacing="0" border="0">
+<tr>
+
+<td id = "header" colspan="2" style="height: 200px;" bgcolor="#777d6a"><h1></h1></td></tr>
+
+
+<div id='cssmenu' >
+<ul >
+   <li><a href='index.html'><span>Home</span></a></li>
+   <li><a href='products.html'><span>Products</span></a></li>
+   <li><a href='gallery.html'><span>Gallery</span></a></li>
+   <li><a href='contacts.html'><span>Contact</span></a></li>
+   <li class='active'><a href='location.html'><span>Location</span></a></li>
+</ul>
+</div>
+
+<tr>
+<td width="100%" valign="top" bgcolor="#d2d8c7">
+
+<table border="3" style="width:100%">
+	<td align="center"><p><strong>Dummy Maps for Canon Warehouse</strong></p></td>
+	<td align="center"><div id="googleMap" style="width:500px;height:380px;" border="3"></div></td>
+	
+</table>
+</td>
+
+<tr><td colspan="2" align="center" height="20" bgcolor="#777d6a">Copyright © 2016 Ahmad Radhi Zikri Aziz(173065). All rights reserved</td></tr>
+</table>
+</body>
+</html>
+
+
